@@ -1,6 +1,7 @@
 package bst;
 
 import java.util.LinkedList;
+
 public class BST {
 	private Node root;
 	
