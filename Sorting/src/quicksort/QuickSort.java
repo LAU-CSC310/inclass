@@ -7,8 +7,8 @@ public class QuickSort {
 
 	
 	int partition(int[] a,int start,int end) {
-		int pivotIdx=generator.nextInt(end-start+1)+start;
-		//int pivotIdx=end;
+		//int pivotIdx=generator.nextInt(end-start+1)+start;
+		int pivotIdx=end;
 		
 		int pivot=a[pivotIdx];
 		a[pivotIdx]=a[end];
@@ -28,7 +28,7 @@ public class QuickSort {
 	}
 	void quickSort(int a[],int start,int end) {
 		if(start>=end)return ;
-		if(depth>10000) {
+		if(depth>1000) {
 			insertionSort(a,start,end);
 		}
 		else {
@@ -53,7 +53,7 @@ public class QuickSort {
 	}
 	public static void main(String[] args) {
 		//int[] a= {1,45,13,9,28,29,7,15};
-		int n=1<<22;
+		int n=1<<2;//  1<<1=> 10, 1<<2=>100, 1<<3=>1000, 1<<n=>2^n
 		int[] a=new int[n];
 		for(int i=0;i<n;++i)a[i]=i;
 		int[] b=a.clone();
