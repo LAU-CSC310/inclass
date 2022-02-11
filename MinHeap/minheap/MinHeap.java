@@ -55,7 +55,7 @@ public class MinHeap {
 		int childIdx;
 		while(2*hole<=size) {
 			childIdx=2*hole;
-			if(array[childIdx]>array[childIdx+1])childIdx++;
+			if(childIdx<size && array[childIdx]>array[childIdx+1])childIdx++;
 			if(array[childIdx]<tmp) {
 				array[hole]=array[childIdx];
 				hole=childIdx;
