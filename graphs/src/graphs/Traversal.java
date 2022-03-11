@@ -9,7 +9,6 @@ public class Traversal {
 	
 	public static void main(String[] args) {
 		BfsGraph g=new BfsGraph();
-		
 		BfsVertex[] nodes=new BfsVertex[6];
 		for(int i=0;i<6;++i)
 			nodes[i]=new BfsVertex(Integer.toString(i));
