@@ -36,9 +36,7 @@ static int bfsVisit(BfsVertex source,BfsVertex dest,int m) {
 	}
 		return count;	
 }
-		
 
-		
 
 
 public static void main(String[] args){

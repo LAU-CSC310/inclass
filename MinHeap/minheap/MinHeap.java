@@ -15,6 +15,8 @@ public class MinHeap {
 //		heap.insert(20);
 //		heap.insert(15);
 //		heap.insert(18);
+		for(int i=0;i<a.length;++i)
+			System.out.print(heap.deleteMin()+",");
 		System.out.println("Done");
 	}
 	public MinHeap() {

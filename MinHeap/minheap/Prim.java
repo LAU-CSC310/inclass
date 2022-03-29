@@ -1,11 +1,11 @@
-package graphs;
+package minheap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 /*Simple implementation of BFS traversal
  * 
  */
-public class Traversal {
+public class Prim {
 	
 	public static void main(String[] args) {
 		BfsGraph g=new BfsGraph();
